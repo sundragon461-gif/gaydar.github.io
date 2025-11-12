@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image" href="icons/fav-icon.png">
+
+    <script>
+        function startGaydar() {
+        alert("Calculating your gayness...")
+        
+        let x = Math.floor(Math.random() * 3) + 1;
+        let gaydar;
+        
+        if (x > 2) { gaydar = "You're gay (100% gayness)"; }
+        else if (x < 2) { gaydar = "You're not gay (0% gayness)"; }
+        else { gaydar = "You are... both...? (50% gayness)"; }
+        
+        alert(gaydar);
+        }
+    </script>
+    
+    <style>
+        button{
+        border-top: solid 6px #f8000a;
+        border-left: solid 6px #b00007;
+        border-right: solid 6px #ae0007;
+        border-bottom: solid 6px #990006;
+        border-radius: 250px;
+        height: 250px;
+        width: 250px;
+        box-shadow: 0 9px #6e0005;
+        font-size: 40px;
+        color: white;
+        background: #c90008;
+        }
+        
+        button:active{
+        transform: translateY(6px);
+        box-shadow: 0 3px #6e0005;
+        }
+
+        button:hover{
+        filter: grayscale(25%);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Click the button to test your gayness!!!</h1>
+    <button onclick="startGaydar()">
+        Start Gaydar
+    </button>
+    </center>
+</body>
+</html>
